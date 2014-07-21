@@ -5,6 +5,6 @@ export default DS.Model.extend({
   body: DS.attr('string'),
   timestamp: DS.attr('number'),
   formattedDate: function() {
-  	return window.moment(this.get('timestamp')).format('MMMM Do, YYYY h:mm a');
+    return window.moment(this.get('timestamp')).format('MMMM Do, YYYY h:mm a');
   }.property('timestamp')
 });
