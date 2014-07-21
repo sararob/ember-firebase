@@ -1,0 +1,63 @@
+html, body {
+  margin: 20px;
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url("fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("fonts/Gotham-Bold.otf") format("opentype");
+}
+
+body {
+	font-family: 'Gotham Light';
+}
+
+h1 {
+	font-weight: bold;
+	font-family: 'Gotham Bold';
+	font-size: ;
+}
+
+.msg-text {
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	width: 350px;
+	margin: 15px;
+}
+
+.input {
+	display: inline-block;
+}
+
+.input input{
+	padding: .3em;
+	border: 1px solid #ccc;
+	height: 25px;
+	font-size: 14px;
+}
+
+#sendMsg {
+	padding: 0.6em 1em;
+	background-color: #50b1ff;
+	border: none;
+	-webkit-transition: background-color 300ms;
+	transition: background-color 300ms;
+	color: #FFF;
+	font-family: 'HelveticaNeue-Light';
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.date {
+	color: grey;
+	font-style: italic;
+}
+
+.name {
+	font-family: 'Gotham Bold';
+}

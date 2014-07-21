@@ -1,0 +1,14 @@
+<h2>SF Ember Chat</h2>
+<div class="input">
+{{input value=message.name placeholder="Name"}}
+{{input value=message.body placeholder="Message"}}
+</div>
+
+<button {{action "addMessage"}} id="sendMsg">Add</button>
+{{#each message in arrangedContent}}
+	<div class="msg-text">
+		<div class="name">{{message.name}}</div>
+		<div>{{message.body}}</div>
+		<div class="date">{{message.formattedDate}}</div>
+	</div>
+{{/each}}
